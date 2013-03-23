@@ -11,6 +11,4 @@ $db->connect('localhost', 'admin', 'admin', 'sandbox');
 
 // system variables 
 
-
-
 ?>
