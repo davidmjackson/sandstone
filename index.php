@@ -2,8 +2,6 @@
 
 include 'includes/init.php';
 
-$criteria = 'Keene';
-
 $db->select(
     'email, address2',
     'sandbox'

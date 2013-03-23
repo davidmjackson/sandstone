@@ -1,0 +1,3786 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class database | callcentre</title>
+
+	<script type="text/javascript" src="resources/combined.js?3417905234"></script>
+	<script type="text/javascript" src="elementlist.js?2209389178"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Zebra.html">Zebra<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Zebra.Database.html">Database</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-database.html">database</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Zebra.Database.html" title="Summary of Zebra\Database"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class database</h1>
+
+
+	<div class="description">
+	
+<p>An advanced, compact, lightweight, object-oriented MySQL database wrapper,
+built upon PHP's <a href="http://www.php.net/manual/en/book.mysqli.php">MySQLi extension</a>. It provides methods for interacting with MySQL databases that
+are more powerful and intuitive than PHP's default ones.</p>
+
+<p>It supports <a href="http://dev.mysql.com/doc/refman/5.0/en/commit.html">transactions</a> and provides ways for caching query results either by saving
+cached data on the disk, or by using <a href="http://memcached.org/about">memcache</a>.<br
+/>
+Provides a comprehensive debugging interface with detailed information about the
+executed queries: execution time, returned/affected rows, excerpts of the found
+rows, error messages, etc. It also automatically <a href="http://dev.mysql.com/doc/refman/5.0/en/explain.html">EXPLAIN</a>'s each SELECT query (so you don't miss those keys again!).<br />
+It encourages developers to write maintainable code and provides a better
+default security layer by encouraging the use of prepared statements, where
+arguments are escaped automatically.<br />
+The code is heavily commented and generates no warnings/errors/notices when
+PHP's error reporting level is set to E_ALL.<br />
+Visit <a href="http://stefangabos.ro/php-libraries/zebra-database/">http://stefangabos.ro/php-libraries/zebra-database/</a>
+for more information.<br />
+For more resources visit <a href="http://stefangabos.ro/">http://stefangabos.ro/</a></p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Zebra.html">Zebra</a>\<a href="package-Zebra.Database.html">Database</a><br />
+
+				<b>Copyright:</b>
+				(c) 2006 - 2013 Stefan Gabos<br />
+				<b>License:</b>
+				<a href="http://www.gnu.org/licenses/lgpl-3.0.txt">GNU LESSER GENERAL PUBLIC LICENSE</a><br />
+				<b>Author:</b>
+				Stefan Gabos &lt;<a
+href="mailto:contact&#64;stefangabos.ro">contact&#64;<!---->stefangabos.ro</a>&gt;<br />
+				<b>Version:</b>
+				2.8 (last revision: March 15, 2013)<br />
+		<b>Located at</b> <a href="source-class-database.html#4-4103" title="Go to source code">includes/database/database.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-database.html#427-470" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Constructor of the class</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor of the class</p>
+
+<p>Initializes the class' properties</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="close" id="_close">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_close">#</a>
+		<code><a href="source-class-database.html#472-485" title="Go to source code">close</a>( )</code>
+
+		<div class="description short">
+			
+<p>Closes the MySQL connection.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Closes the MySQL connection.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success or FALSE on failure.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.0<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connect" id="_connect">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connect">#</a>
+		<code><a href="source-class-database.html#487-547" title="Go to source code">connect</a>( <span>string <var>$host</var></span>, <span>string <var>$user</var></span>, <span>string <var>$password</var></span>, <span>string <var>$database</var></span>, <span>boolean <var>$connect</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Opens a connection to a MySQL Server and selects a database.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Opens a connection to a MySQL Server and selects a database.</p>
+
+<p><i>Since the library is using "lazy connection" (it is not actually
+connecting to the database until the first query is executed) there's no link
+identifier available when calling this method!</i><br />
+<i>If you need the link identifier use the <code><a href="class-database.html#_get_link">database::get_link()</a></code> method!</i><br />
+<i>If you need the connection to the database to be made right away, set the
+"connect" argument to TRUE.</i></p>
+
+<pre>
+<span class="php-comment">// create the database object</span>
+<span
+class="php-var">$db</span> = <span
+class="php-keyword1">new</span> Zebra_Database();
+
+<span
+class="php-comment">// notice that we're not doing any error checking. errors will be shown in the debug console</span>
+<span
+class="php-var">$db</span>-&gt;connect(<span
+class="php-quote">'host'</span>, <span
+class="php-quote">'username'</span>, <span
+class="php-quote">'password'</span>, <span
+class="php-quote">'database'</span>);
+
+<span
+class="php-comment">//  code goes here</span>
+
+<span
+class="php-comment">// show the debug console (if enabled)</span>
+<span
+class="php-var">$db</span>-&gt;show_debug_console();
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$host</var></dt>
+					<dd><code>string</code><br>$host The address of the MySQL server to connect to (i.e. localhost).</dd>
+					<dt><var>$user</var></dt>
+					<dd><code>string</code><br>$user The user name used for authentication when connecting to the MySQL server.</dd>
+					<dt><var>$password</var></dt>
+					<dd><code>string</code><br>$password The password used for authentication when connecting to the MySQL
+server.</dd>
+					<dt><var>$database</var></dt>
+					<dd><code>string</code><br>$database The database to be selected after the connection is established.</dd>
+					<dt><var>$connect</var></dt>
+					<dd><code>boolean</code><br>$connect (Optional) Setting this argument to TRUE will force the library to
+connect to the database right away. Default is FALSE.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dcount" id="_dcount">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dcount">#</a>
+		<code><a href="source-class-database.html#549-625" title="Go to source code">dcount</a>( <span>string <var>$column</var></span>, <span>string <var>$table</var></span>, <span>string <var>$where</var> = <span class="php-quote">''</span></span>, <span>array <var>$replacements</var> = <span class="php-quote">''</span></span>, <span>mixed <var>$cache</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Counts the values in a column of a table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Counts the values in a column of a table.</p>
+
+<pre>
+<span class="php-comment">// count male users</span>
+<span
+class="php-var">$male</span> = <span class="php-var">$db</span>-&gt;dcount(<span
+class="php-quote">'id'</span>, <span class="php-quote">'users'</span>, <span
+class="php-quote">'gender = &quot;M&quot;'</span>);
+
+<span
+class="php-comment">// when working with variables you should use the following syntax</span>
+<span
+class="php-comment">// this way variables will be mysqli_real_escape_string-ed first</span>
+<span
+class="php-var">$users</span> = <span
+class="php-var">$db</span>-&gt;dcount(<span class="php-quote">'id'</span>, <span
+class="php-quote">'users'</span>, <span
+class="php-quote">'gender = ?'</span>, <span
+class="php-keyword1">array</span>(<span class="php-var">$gender</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code><br>$column Name of the column in which to do the counting.</dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Name of the table containing the column.</dd>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code><br>$where (Optional) A MySQL WHERE clause (without the WHERE keyword). Default is
+"" (an empty string).</dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code><br>$replacements (Optional) An array with as many items as the total parameter
+markers ("?", question marks) in <i>$column</i>, <i>$table</i> and
+<i>$where</i>. Each item will be automatically <code><a href="class-database.html#_escape">database::escape()</a></code>-ed and will
+replace the corresponding "?". Default is "" (an empty string).</dd>
+					<dt><var>$cache</var></dt>
+					<dd><code>mixed</code><br>$cache (Optional) Instructs the script on whether it should cache the query's
+results or not. Can be either FALSE - meaning no caching - or an integer
+representing the number of seconds after which the cached results are considered
+to be expired and the query will be executed again. The caching method is
+specified by the value of the <code><a href="class-database.html#$caching_method">database::<var>$caching_method</var></a></code> property. Default is FALSE.</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Returns the number of counted records, or FALSE if no records matching the given
+criteria (if any) were found. It also returns FALSE if there are no records in
+the table or on error. <i>This method may return boolean FALSE, but may also
+return a non-Boolean value which evaluates to FALSE, such as 0. Use the ===
+operator for testing the return value of this method.</i><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-database.html#627-678" title="Go to source code">delete</a>( <span>string <var>$table</var></span>, <span>string <var>$where</var> = <span class="php-quote">''</span></span>, <span>array <var>$replacements</var> = <span class="php-quote">''</span></span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Deletes rows from a table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Deletes rows from a table.</p>
+
+<pre>
+<span class="php-comment">// delete male users</span>
+<span
+class="php-var">$db</span>-&gt;<span class="php-keyword2">delete</span>(<span
+class="php-quote">'users'</span>, <span
+class="php-quote">'gender = &quot;M&quot;'</span>);
+
+<span
+class="php-comment">// when working with variables you should use the following syntax</span>
+<span
+class="php-comment">// this way variables will be mysqli_real_escape_string-ed first</span>
+<span
+class="php-var">$db</span>-&gt;<span class="php-keyword2">delete</span>(<span
+class="php-quote">'users'</span>, <span
+class="php-quote">'gender = ?'</span>, <span
+class="php-keyword1">array</span>(<span class="php-var">$gender</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Table from which to delete.</dd>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code><br>$where (Optional) A MySQL WHERE clause (without the WHERE keyword). Default is
+"" (an empty string).</dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code><br>$replacements (Optional) An array with as many items as the total parameter
+markers ("?", question marks) in <i>$table</i> and <i>$where</i>. Each item will
+be automatically <code><a href="class-database.html#_escape">database::escape()</a></code>-ed and will replace the corresponding "?".
+Default is "" (an empty string).</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success, or FALSE on error<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0.9<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dlookup" id="_dlookup">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dlookup">#</a>
+		<code><a href="source-class-database.html#680-763" title="Go to source code">dlookup</a>( <span>string <var>$column</var></span>, <span>string <var>$table</var></span>, <span>string <var>$where</var> = <span class="php-quote">''</span></span>, <span>array <var>$replacements</var> = <span class="php-quote">''</span></span>, <span>mixed <var>$cache</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns one or more columns from ONE row of a table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns one or more columns from ONE row of a table.</p>
+
+<pre>
+<span
+class="php-comment">// get name, surname and age of all male users</span>
+<span
+class="php-var">$result</span> = <span
+class="php-var">$db</span>-&gt;dlookup(<span
+class="php-quote">'name, surname, age'</span>, <span
+class="php-quote">'users'</span>, <span
+class="php-quote">'gender = &quot;M&quot;'</span>);
+
+<span
+class="php-comment">// when working with variables you should use the following syntax</span>
+<span
+class="php-comment">// this way variables will be mysqli_real_escape_string-ed first</span>
+<span
+class="php-var">$result</span> = <span
+class="php-var">$db</span>-&gt;dlookup(<span
+class="php-quote">'name, surname, age'</span>, <span
+class="php-quote">'users'</span>, <span
+class="php-quote">'gender = ?'</span>, <span
+class="php-keyword1">array</span>(<span class="php-var">$gender</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code><br>$column One or more columns to return data from. <i>If only one column is
+specified, the returned result will be the specified column's value, whereas if
+more columns are specified, the returned result will be an associative
+array!</i> <i>You may use "*" (without the quotes) to return all the columns
+from the row.</i></dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Name of the in which to search.</dd>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code><br>$where (Optional) A MySQL WHERE clause (without the WHERE keyword). Default is
+"" (an empty string).</dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code><br>$replacements (Optional) An array with as many items as the total parameter
+markers ("?", question marks) in <i>$column</i>, <i>$table</i> and
+<i>$where</i>. Each item will be automatically <code><a href="class-database.html#_escape">database::escape()</a></code>-ed and will
+replace the corresponding "?". Default is "" (an empty string).</dd>
+					<dt><var>$cache</var></dt>
+					<dd><code>mixed</code><br>$cache (Optional) Instructs the script on whether it should cache the query's
+results or not. Can be either FALSE - meaning no caching - or an integer
+representing the number of seconds after which the cached results are considered
+to be expired and the query will be executed again. The caching method is
+specified by the value of the <code><a href="class-database.html#$caching_method">database::<var>$caching_method</var></a></code> property. Default is FALSE.</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Found value/values, or FALSE if no records matching the given criteria (if any)
+were found. It also returns FALSE if there are no records in the table or on
+error.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dmax" id="_dmax">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dmax">#</a>
+		<code><a href="source-class-database.html#765-841" title="Go to source code">dmax</a>( <span>string <var>$column</var></span>, <span>string <var>$table</var></span>, <span>string <var>$where</var> = <span class="php-quote">''</span></span>, <span>array <var>$replacements</var> = <span class="php-quote">''</span></span>, <span>mixed <var>$cache</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Looks up the maximum value in a column of a table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Looks up the maximum value in a column of a table.</p>
+
+<pre>
+<span
+class="php-comment">// get the maximum age of male users</span>
+<span
+class="php-var">$result</span> = <span class="php-var">$db</span>-&gt;dmax(<span
+class="php-quote">'age'</span>, <span class="php-quote">'users'</span>, <span
+class="php-quote">'gender = &quot;M&quot;'</span>);
+
+<span
+class="php-comment">// when working with variables you should use the following syntax</span>
+<span
+class="php-comment">// this way variables will be mysqli_real_escape_string-ed first</span>
+<span
+class="php-var">$result</span> = <span class="php-var">$db</span>-&gt;dmax(<span
+class="php-quote">'age'</span>, <span class="php-quote">'users'</span>, <span
+class="php-quote">'gender = ?'</span>, <span
+class="php-keyword1">array</span>(<span class="php-var">$gender</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code><br>$column Name of the column in which to search.</dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Name of table in which to search.</dd>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code><br>$where (Optional) A MySQL WHERE clause (without the WHERE keyword). Default is
+"" (an empty string).</dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code><br>$replacements (Optional) An array with as many items as the total parameter
+markers ("?", question marks) in <i>$column</i>, <i>$table</i> and
+<i>$where</i>. Each item will be automatically <code><a href="class-database.html#_escape">database::escape()</a></code>-ed and will
+replace the corresponding "?". Default is "" (an empty string).</dd>
+					<dt><var>$cache</var></dt>
+					<dd><code>mixed</code><br>$cache (Optional) Instructs the script on whether it should cache the query's
+results or not. Can be either FALSE - meaning no caching - or an integer
+representing the number of seconds after which the cached results are considered
+to be expired and the query will be executed again. The caching method is
+specified by the value of the <code><a href="class-database.html#$caching_method">database::<var>$caching_method</var></a></code> property. Default is FALSE.</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>The maximum value in the column, or FALSE if no records matching the given
+criteria (if any) were found. It also returns FALSE if there are no records in
+the table or on error. <i>This method may return boolean FALSE, but may also
+return a non-Boolean value which evaluates to FALSE, such as 0. Use the ===
+operator for testing the return value of this method.</i><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dsum" id="_dsum">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dsum">#</a>
+		<code><a href="source-class-database.html#843-920" title="Go to source code">dsum</a>( <span>string <var>$column</var></span>, <span>string <var>$table</var></span>, <span>string <var>$where</var> = <span class="php-quote">''</span></span>, <span>array <var>$replacements</var> = <span class="php-quote">''</span></span>, <span>mixed <var>$cache</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sums the values in a column of a table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sums the values in a column of a table.</p>
+
+<p>Example:</p>
+
+<pre>
+<span
+class="php-comment">// get the total logins of all male users</span>
+<span
+class="php-var">$result</span> = <span class="php-var">$db</span>-&gt;dsum(<span
+class="php-quote">'login_count'</span>, <span
+class="php-quote">'users'</span>, <span
+class="php-quote">'gender = &quot;M&quot;'</span>);
+
+<span
+class="php-comment">// when working with variables you should use the following syntax</span>
+<span
+class="php-comment">// this way variables will be mysqli_real_escape_string-ed first</span>
+<span
+class="php-var">$result</span> = <span class="php-var">$db</span>-&gt;dsum(<span
+class="php-quote">'login_count'</span>, <span
+class="php-quote">'users'</span>, <span
+class="php-quote">'gender = ?'</span>, <span
+class="php-keyword1">array</span>(<span class="php-var">$gender</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code><br>$column Name of the column in which to sum values.</dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Name of the table in which to search.</dd>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code><br>$where (Optional) A MySQL WHERE clause (without the WHERE keyword). Default is
+"" (an empty string).</dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code><br>$replacements (Optional) An array with as many items as the total parameter
+markers ("?", question marks) in <i>$column</i>, <i>$table</i> and
+<i>$where</i>. Each item will be automatically <code><a href="class-database.html#_escape">database::escape()</a></code>-ed and will
+replace the corresponding "?". Default is "" (an empty string).</dd>
+					<dt><var>$cache</var></dt>
+					<dd><code>mixed</code><br>$cache (Optional) Instructs the script on whether it should cache the query's
+results or not. Can be either FALSE - meaning no caching - or an integer
+representing the number of seconds after which the cached results are considered
+to be expired and the query will be executed again. The caching method is
+specified by the value of the <code><a href="class-database.html#$caching_method">database::<var>$caching_method</var></a></code> property. Default is FALSE.</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Returns the sum, or FALSE if no records matching the given criteria (if any)
+were found. It also returns FALSE if there are no records in the table or on
+error. <i>This method may return boolean FALSE, but may also return a
+non-Boolean value which evaluates to FALSE, such as 0. Use the === operator for
+testing the return value of this method.</i><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="escape" id="_escape">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_escape">#</a>
+		<code><a href="source-class-database.html#922-976" title="Go to source code">escape</a>( <span>string <var>$string</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Escapes special characters in a string for use in an SQL statement.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Escapes special characters in a string for use in an SQL statement.</p>
+
+<p><i>This method also encloses given string in single quotes!</i><br />
+<i>Works even if <a href="http://www.php.net/manual/en/info.configuration.php#ini.magic-quotes-gpc">magic_quotes</a> is ON.</i></p>
+
+<pre>
+<span class="php-comment">// use the method in a query</span>
+<span
+class="php-comment">// THIS IS NOT THE RECOMMENDED METHOD!</span>
+<span
+class="php-var">$db</span>-&gt;query(<span
+class="php-quote">'
+    SELECT
+        *
+    FROM
+        users
+    WHERE
+        gender = &quot;'</span> . <span
+class="php-var">$db</span>-&gt;escape(<span
+class="php-var">$gender</span>) . <span
+class="php-quote">'&quot;
+'</span>);
+
+<span
+class="php-comment">// the recommended method</span>
+<span
+class="php-comment">// (variable are automatically escaped this way)</span>
+<span
+class="php-var">$db</span>-&gt;query(<span
+class="php-quote">'
+    SELECT
+        *
+    FROM
+        users
+    WHERE
+        gender = ?
+'</span>, <span
+class="php-keyword1">array</span>(<span class="php-var">$gender</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd><code>string</code><br>$string String that is to be escaped.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Returns the escaped string.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch_assoc" id="_fetch_assoc">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetch_assoc">#</a>
+		<code><a href="source-class-database.html#978-1039" title="Go to source code">fetch_assoc</a>( <span>resource <var>$resource</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns an associative array that corresponds to the fetched row and moves
+the internal data pointer ahead. The<br />
+data is taken from the resource created by the previous query or from the
+resource given as argument.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an associative array that corresponds to the fetched row and moves
+the internal data pointer ahead. The data is taken from the resource created by
+the previous query or from the resource given as argument.</p>
+
+<pre>
+<span class="php-comment">// create the database object</span>
+<span
+class="php-comment">// run a query</span>
+<span
+class="php-var">$db</span>-&gt;query(<span
+class="php-quote">'SELECT * FROM table WHERE criteria = ?'</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-var">$criteria</span>));
+
+<span
+class="php-comment">// iterate through the found records</span>
+<span
+class="php-keyword1">while</span> (<span class="php-var">$row</span> = <span
+class="php-var">$db</span>-&gt;fetch_assoc()) {
+
+    <span
+class="php-comment">// code goes here</span>
+
+}
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$resource</var></dt>
+					<dd><code>resource</code><br>$resource (Optional) Resource to fetch. <i>If not specified, the resource
+returned by the last run query is used.</i></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Returns an associative array that corresponds to the fetched row and moves the
+internal data pointer ahead, or FALSE if there are no more rows.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch_assoc_all" id="_fetch_assoc_all">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetch_assoc_all">#</a>
+		<code><a href="source-class-database.html#1041-1124" title="Go to source code">fetch_assoc_all</a>( <span>string <var>$index</var> = <span class="php-quote">''</span></span>, <span>resource <var>$resource</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns an associative array containing all the rows from the resource
+created by the previous query or from the<br />
+resource given as argument and moves the internal pointer to the end.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an associative array containing all the rows from the resource
+created by the previous query or from the resource given as argument and moves
+the internal pointer to the end.</p>
+
+<pre>
+<span class="php-comment">// run a query</span>
+<span
+class="php-var">$db</span>-&gt;query(<span
+class="php-quote">'SELECT * FROM table WHERE criteria = ?'</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-var">$criteria</span>));
+
+<span
+class="php-comment">// fetch all the rows as an associative array</span>
+<span
+class="php-var">$records</span> = <span
+class="php-var">$db</span>-&gt;fetch_assoc_all();
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$index</var></dt>
+					<dd><code>string</code><br>$index (Optional) A column name from the records, containing unique values. If
+specified, each entry in the returned array will have its index equal to the the
+value of the specified column for each particular row. <i>If not specified,
+returned array will have numerical indexes, starting from 0.</i></dd>
+					<dt><var>$resource</var></dt>
+					<dd><code>resource</code><br>$resource (Optional) Resource to fetch. <i>If not specified, the resource
+returned by the last run query is used.</i></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Returns an associative array containing all the rows from the resource created
+by the previous query or from the resource given as argument and moves the
+internal pointer to the end. Returns FALSE on error.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch_obj" id="_fetch_obj">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetch_obj">#</a>
+		<code><a href="source-class-database.html#1126-1201" title="Go to source code">fetch_obj</a>( <span>resource <var>$resource</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns an object with properties that correspond to the fetched row and
+moves the internal data pointer ahead.<br />
+The data is taken from the resource created by the previous query or from the
+resource given as argument.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an object with properties that correspond to the fetched row and
+moves the internal data pointer ahead. The data is taken from the resource
+created by the previous query or from the resource given as argument.</p>
+
+<pre>
+<span class="php-comment">// run a query</span>
+<span
+class="php-var">$db</span>-&gt;query(<span
+class="php-quote">'SELECT * FROM table WHERE criteria = ?'</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-var">$criteria</span>));
+
+<span
+class="php-comment">// iterate through the found records</span>
+<span
+class="php-keyword1">while</span> (<span class="php-var">$row</span> = <span
+class="php-var">$db</span>-&gt;fetch_obj()) {
+
+    <span
+class="php-comment">// code goes here</span>
+
+}
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$resource</var></dt>
+					<dd><code>resource</code><br>$resource (Optional) Resource to fetch. <i>If not specified, the resource
+returned by the last run query is used.</i></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Returns an object with properties that correspond to the fetched row and moves
+the internal data pointer ahead, or FALSE if there are no more rows.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0.8<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch_obj_all" id="_fetch_obj_all">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetch_obj_all">#</a>
+		<code><a href="source-class-database.html#1203-1286" title="Go to source code">fetch_obj_all</a>( <span>string <var>$index</var> = <span class="php-quote">''</span></span>, <span>resource <var>$resource</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns an associative array containing all the rows (as objects) from the
+resource created by the previous query<br />
+or from the resource given as argument and moves the internal pointer to the
+end.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an associative array containing all the rows (as objects) from the
+resource created by the previous query or from the resource given as argument
+and moves the internal pointer to the end.</p>
+
+<pre>
+<span class="php-comment">// run a query</span>
+<span
+class="php-var">$db</span>-&gt;query(<span
+class="php-quote">'SELECT * FROM table WHERE criteria = ?'</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-var">$criteria</span>));
+
+<span
+class="php-comment">// fetch all the rows as an associative array</span>
+<span
+class="php-var">$records</span> = <span
+class="php-var">$db</span>-&gt;fetch_obj_all();
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$index</var></dt>
+					<dd><code>string</code><br>$index (Optional) A column name from the records, containing unique values. If
+specified, each entry in the returned array will have its index equal to the the
+value of the specified column for each particular row. <i>If not specified,
+returned array will have numerical indexes, starting from 0.</i></dd>
+					<dt><var>$resource</var></dt>
+					<dd><code>resource</code><br>$resource (Optional) Resource to fetch. <i>If not specified, the resource
+returned by the last run query is used.</i></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Returns an associative array containing all the rows (as objects) from the
+resource created by the previous query or from the resource given as argument
+and moves the internal pointer to the end. Returns FALSE on error.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_columns" id="_get_columns">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_columns">#</a>
+		<code><a href="source-class-database.html#1288-1370" title="Go to source code">get_columns</a>( <span>resource <var>$resource</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns an array of associative arrays with information about the columns in
+the MySQL result associated with<br />
+the specified result identifier.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an array of associative arrays with information about the columns in
+the MySQL result associated with the specified result identifier.</p>
+
+<p>Each entry will have the column's name as index and, associated, an array
+with the following keys:<br />
+- name - table - def - max_length - not_null - primary_key - multiple_key -
+unique_key - numeric - blob - type - unsigned - zerofill</p>
+
+<pre>
+<span class="php-comment">// run a query</span>
+<span
+class="php-var">$db</span>-&gt;query(<span
+class="php-quote">'SELECT * FROM table'</span>);
+
+<span
+class="php-comment">// print information about the columns</span>
+<span
+class="php-keyword2">print_r</span>(<span
+class="php-quote">'&lt;pre&gt;'</span>);
+<span
+class="php-keyword2">print_r</span>(<span
+class="php-var">$db</span>-&gt;get_columns());
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$resource</var></dt>
+					<dd><code>resource</code><br>$resource (Optional) Resource to fetch columns information from. <i>If not
+specified, the resource returned by the last run query is used.</i></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Returns an associative array with information about the columns in the MySQL
+result associated with the specified result identifier or FALSE on error.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.0<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_link" id="_get_link">
+
+		<td class="attributes"><code>
+			 public 
+			identifier
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_link">#</a>
+		<code><a href="source-class-database.html#1372-1403" title="Go to source code">get_link</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the MySQL link identifier associated with the current connection to
+the MySQL server.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the MySQL link identifier associated with the current connection to
+the MySQL server.</p>
+
+<p>Why a separate method? Because the library uses "lazy connection" (it is not
+actually connecting to the database until the first query is executed) there's
+no link identifier available when calling the <code><a href="class-database.html#_connect">database::connect()</a></code> method.</p>
+
+<pre>
+<span class="php-comment">// create the database object</span>
+<span
+class="php-var">$db</span> = <span
+class="php-keyword1">new</span> Zebra_Database();
+
+<span
+class="php-comment">// nothing is returned by this method!</span>
+<span
+class="php-var">$db</span>-&gt;connect(<span
+class="php-quote">'host'</span>, <span
+class="php-quote">'username'</span>, <span
+class="php-quote">'password'</span>, <span
+class="php-quote">'database'</span>);
+
+<span
+class="php-comment">// get the link identifier</span>
+<span
+class="php-var">$link</span> = <span
+class="php-var">$db</span>-&gt;get_link();
+</pre>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>identifier</code><br>Returns the MySQL link identifier associated with the current connection to the
+MySQL server.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.5<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_table_columns" id="_get_table_columns">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_table_columns">#</a>
+		<code><a href="source-class-database.html#1405-1432" title="Go to source code">get_table_columns</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns information about the columns of a given table, as an associative
+array.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns information about the columns of a given table, as an associative
+array.</p>
+
+<pre>
+<span
+class="php-comment">// get column information for a table named &quot;table_name&quot;</span>
+<span
+class="php-var">$db</span>-&gt;get_columns(<span
+class="php-quote">'table_name'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Name of table to return column information for.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Returns information about the columns of a given table, as an associative array.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.6<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_table_status" id="_get_table_status">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_table_status">#</a>
+		<code><a href="source-class-database.html#1434-1466" title="Go to source code">get_table_status</a>( <span>string <var>$pattern</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns an associative array with a lot of useful information on all or
+specific tables only.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an associative array with a lot of useful information on all or
+specific tables only.</p>
+
+<pre>
+<span
+class="php-comment">// return status information on tables having their name starting with &quot;users&quot;</span>
+<span
+class="php-var">$tables</span> = get_table_status(<span
+class="php-quote">'users%'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pattern</var></dt>
+					<dd><code>string</code><br>$pattern (Optional) Instructs the method to return information only on tables
+whose name matches the given pattern. Can be a table name or a pattern with "%"
+as wildcard.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Returns an associative array with a lot of useful information on all or specific
+tables only.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_tables" id="_get_tables">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_tables">#</a>
+		<code><a href="source-class-database.html#1468-1497" title="Go to source code">get_tables</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns an array with all the tables in the current database.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an array with all the tables in the current database.</p>
+
+<pre>
+<span class="php-comment">// get all tables from database</span>
+<span
+class="php-var">$tables</span> = get_tables();
+</pre>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>An array with all the tables in the current database.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="halt" id="_halt">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_halt">#</a>
+		<code><a href="source-class-database.html#1499-1517" title="Go to source code">halt</a>( )</code>
+
+		<div class="description short">
+			
+<p>Stops the execution of the script at the line where this method is called
+and, if <code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is set to TRUE and<br />
+the viewer's IP address is in the <code><a href="class-database.html#$debugger_ip">database::<var>$debugger_ip</var></a></code> array (or
+<i>debugger_ip</i> is an empty array), shows the<br />
+debug console.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Stops the execution of the script at the line where this method is called
+and, if <code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is set to TRUE and the viewer's IP address is in the
+<code><a href="class-database.html#$debugger_ip">database::<var>$debugger_ip</var></a></code> array (or <i>debugger_ip</i> is an empty array), shows the
+debug console.</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0.7<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="implode" id="_implode">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_implode">#</a>
+		<code><a href="source-class-database.html#1519-1573" title="Go to source code">implode</a>( <span>array <var>$pieces</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Works similarly to PHP's implode() function, with the difference that the
+"glue" is always the comma and that<br />
+this method <code><a href="class-database.html#_escape">database::escape()</a></code>'s arguments.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Works similarly to PHP's implode() function, with the difference that the
+"glue" is always the comma and that this method <code><a href="class-database.html#_escape">database::escape()</a></code>'s
+arguments.</p>
+
+<p><i>Useful for escaping an array's values used in SQL statements with the "IN"
+keyword.</i></p>
+
+<pre>
+<span class="php-var">$array</span> = <span
+class="php-keyword1">array</span>(<span class="php-num">1</span>,<span
+class="php-num">2</span>,<span class="php-num">3</span>,<span
+class="php-num">4</span>);
+
+<span
+class="php-comment">//  INCORRECT</span>
+
+<span
+class="php-comment">//  this would not work as the WHERE clause in the SQL statement would become</span>
+<span
+class="php-comment">//  WHERE column IN ('1,2,3,4')</span>
+<span
+class="php-var">$db</span>-&gt;query(<span
+class="php-quote">'
+    SELECT
+        column
+    FROM
+        table
+    WHERE
+        column IN (?)
+'</span>, <span
+class="php-keyword1">array</span>(<span class="php-var">$array</span>));
+
+<span
+class="php-comment">//  CORRECT</span>
+
+<span
+class="php-comment">//  this would work as the WHERE clause in the SQL statement would become</span>
+<span
+class="php-comment">//  WHERE column IN ('1','2','3','4') which is what we actually need</span>
+<span
+class="php-var">$db</span>-&gt;query(<span
+class="php-quote">'
+    SELECT
+        column
+    FROM
+        table
+    WHERE
+        column IN ('</span> . <span
+class="php-var">$db</span>-&gt;<span class="php-keyword2">implode</span>(<span
+class="php-var">$array</span>) . <span class="php-quote">')
+'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pieces</var></dt>
+					<dd><code>array</code><br>$pieces An array with items to be "glued" together</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Returns the string representation of all the array elements in the same order,
+escaped and with commas between each element.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.0<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-database.html#1575-1641" title="Go to source code">insert</a>( <span>string <var>$table</var></span>, <span>array <var>$columns</var></span>, <span>boolean <var>$ignore</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Shorthand for INSERT queries.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Shorthand for INSERT queries.</p>
+
+<p>When using this method, column names will be enclosed in grave accents " ` "
+(thus, allowing seamless usage of reserved words as column names) and values
+will be automatically escaped.</p>
+
+<pre>
+<span class="php-var">$db</span>-&gt;insert(
+    <span
+class="php-quote">'table'</span>,
+    <span
+class="php-keyword1">array</span>(
+        <span
+class="php-quote">'column1'</span>   =&gt;  <span
+class="php-quote">'value1'</span>,
+        <span
+class="php-quote">'column2'</span>   =&gt;  <span
+class="php-quote">'value2'</span>,
+));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Table in which to insert.</dd>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code><br>$columns An associative array where the array's keys represent the columns names
+and the array's values represent the values to be inserted in each respective
+column. Column names will be enclosed in grave accents " ` " (thus, allowing
+seamless usage of reserved words as column names) and values will be
+automatically <code><a href="class-database.html#_escape">database::escape()</a></code>d.</dd>
+					<dt><var>$ignore</var></dt>
+					<dd><code>boolean</code><br>$ignore (Optional) By default, trying to insert a record that would cause a
+duplicate entry for a primary key would result in an error. If you want these
+errors to be skipped set this argument to TRUE. For more information see <a href="http://dev.mysql.com/doc/refman/5.5/en/insert.html">MySQL&#039;s INSERT IGNORE syntax</a>. Default is FALSE.</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success of FALSE on error.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0.9<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert_bulk" id="_insert_bulk">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert_bulk">#</a>
+		<code><a href="source-class-database.html#1643-1724" title="Go to source code">insert_bulk</a>( <span>string <var>$table</var></span>, <span>array <var>$columns</var></span>, <span>arrays <var>$data</var></span>, <span>boolean <var>$ignore</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Shorthand inserting multiple rows in a single query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Shorthand inserting multiple rows in a single query.</p>
+
+<p>When using this method, column names will be enclosed in grave accents " ` "
+(thus, allowing seamless usage of reserved words as column names) and values
+will be automatically escaped.</p>
+
+<pre>
+<span class="php-var">$db</span>-&gt;insert_bulk(
+    <span
+class="php-quote">'table'</span>,
+    <span
+class="php-keyword1">array</span>(<span
+class="php-quote">'column1'</span>, <span
+class="php-quote">'column2'</span>),
+    <span
+class="php-keyword1">array</span>(
+        <span
+class="php-keyword1">array</span>(<span class="php-quote">'value1'</span>, <span
+class="php-quote">'value2'</span>),
+        <span
+class="php-keyword1">array</span>(<span class="php-quote">'value3'</span>, <span
+class="php-quote">'value4'</span>),
+        <span
+class="php-keyword1">array</span>(<span class="php-quote">'value5'</span>, <span
+class="php-quote">'value6'</span>),
+        <span
+class="php-keyword1">array</span>(<span class="php-quote">'value7'</span>, <span
+class="php-quote">'value8'</span>),
+        <span
+class="php-keyword1">array</span>(<span class="php-quote">'value9'</span>, <span
+class="php-quote">'value10'</span>)
+    )
+));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Table in which to insert.</dd>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code><br>$columns An array with columns to insert values into. Column names will be
+enclosed in grave accents " ` " (thus, allowing seamless usage of reserved words
+as column names).</dd>
+					<dt><var>$data</var></dt>
+					<dd><code>arrays</code><br>$data An array of an unlimited number of arrays containing values to be
+inserted. Values will be automatically <code><a href="class-database.html#_escape">database::escape()</a></code>d.</dd>
+					<dt><var>$ignore</var></dt>
+					<dd><code>boolean</code><br>$ignore (Optional) By default, trying to insert a record that would cause a
+duplicate entry for a primary key would result in an error. If you want these
+errors to be skipped set this argument to TRUE. For more information see <a href="http://dev.mysql.com/doc/refman/5.5/en/insert.html">MySQL&#039;s INSERT IGNORE syntax</a>. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success of FALSE on error.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert_id" id="_insert_id">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert_id">#</a>
+		<code><a href="source-class-database.html#1726-1758" title="Go to source code">insert_id</a>( )</code>
+
+		<div class="description short">
+			
+<p>Retrieves the ID generated for an AUTO_INCREMENT column by the previous
+INSERT query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieves the ID generated for an AUTO_INCREMENT column by the previous
+INSERT query.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>The ID generated for an AUTO_INCREMENT column by the previous INSERT query on
+success, '0' if the previous query does not generate an AUTO_INCREMENT value, or
+FALSE if there was no MySQL connection.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0.4<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert_update" id="_insert_update">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert_update">#</a>
+		<code><a href="source-class-database.html#1760-1866" title="Go to source code">insert_update</a>( <span>string <var>$table</var></span>, <span>array <var>$columns</var></span>, <span>array <var>$update</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>When using this method, if a row is inserted that would cause a duplicate
+value in a UNIQUE index or PRIMARY KEY,<br />
+an UPDATE of the old row is performed.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>When using this method, if a row is inserted that would cause a duplicate
+value in a UNIQUE index or PRIMARY KEY, an UPDATE of the old row is
+performed.</p>
+
+<p>Read more at <a href="http://dev.mysql.com/doc/refman/5.0/en/insert-on-duplicate.html">http://dev.mysql.com/doc/refman/5.0/en/insert-on-duplicate.html</a>.<br
+/>
+When using this method, column names will be enclosed in grave accents " ` "
+(thus, allowing seamless usage of reserved words as column names) and values
+will be automatically escaped.</p>
+
+<pre>
+<span
+class="php-comment">// presuming article_id is a UNIQUE index or PRIMARY KEY, the statement below will insert a new row for given</span>
+<span
+class="php-comment">// $article_id and set the &quot;votes&quot; to 0. But, if $article_id is already in the database, increment the votes'</span>
+<span
+class="php-comment">// numbers.</span>
+<span
+class="php-var">$db</span>-&gt;insert_update(
+    <span
+class="php-quote">'table'</span>,
+    <span
+class="php-keyword1">array</span>(
+        <span
+class="php-quote">'article_id'</span>    =&gt;  <span
+class="php-var">$article_id</span>,
+        <span
+class="php-quote">'votes'</span>         =&gt;  <span
+class="php-num">0</span>,
+    ),
+    <span
+class="php-keyword1">array</span>(
+        <span
+class="php-quote">'votes'</span>         =&gt;  <span
+class="php-quote">'INC(1)'</span>,
+    )
+);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Table in which to insert/update.</dd>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code><br>$columns An associative array where the array's keys represent the columns names
+and the array's values represent the values to be inserted in each respective
+column. Column names will be enclosed in grave accents " ` " (thus, allowing
+seamless usage of reserved words as column names) and values will be
+automatically <code><a href="class-database.html#_escape">database::escape()</a></code>d.</dd>
+					<dt><var>$update</var></dt>
+					<dd><code>array</code><br>$update (Optional) An associative array where the array's keys represent the
+columns names and the array's values represent the values to be inserted in each
+respective column. This array represents the columns/values to be updated if the
+inserted row would cause a duplicate value in a UNIQUE index or PRIMARY KEY. If
+an empty array is given, the values in <i>$columns</i> will be used. Column
+names will be enclosed in grave accents " ` " (thus, allowing seamless usage of
+reserved words as column names) and values will be automatically <code><a href="class-database.html#_escape">database::escape()</a></code>d. A special value may also be used for when a column's value needs to
+be incremented or decremented. In this case, use <i>INC(value)</i> where
+<i>value</i> is the value to increase the column's value with. Use
+<i>INC(-value)</i> to decrease the column's value. See <code><a href="class-database.html#_update">database::update()</a></code> for an
+example. Default is an empty array.</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success of FALSE on error.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="language" id="_language">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_language">#</a>
+		<code><a href="source-class-database.html#1868-1893" title="Go to source code">language</a>( <span>string <var>$language</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the language to be used for messages in the debug console.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the language to be used for messages in the debug console.</p>
+
+<pre>
+<span
+class="php-comment">// show messages in the debug console in German</span>
+<span
+class="php-var">$db</span>-&gt;language(<span
+class="php-quote">'german'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$language</var></dt>
+					<dd><code>string</code><br>$language The name of the PHP language file from the "languages" subdirectory.
+Must be specified without the extension! (i.e. "german" for the german language
+not "german.php") Default is "english".</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0.6<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="optimize" id="_optimize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_optimize">#</a>
+		<code><a href="source-class-database.html#1895-1916" title="Go to source code">optimize</a>( )</code>
+
+		<div class="description short">
+			
+<p>Optimizes all tables that have overhead (unused, lost space)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Optimizes all tables that have overhead (unused, lost space)</p>
+
+<pre>
+<span
+class="php-comment">// optimize all tables in the database</span>
+<span
+class="php-var">$db</span>-&gt;optimize();
+</pre>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parse_file" id="_parse_file">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parse_file">#</a>
+		<code><a href="source-class-database.html#1918-1994" title="Go to source code">parse_file</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parses a MySQL dump file (like an export from phpMyAdmin).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parses a MySQL dump file (like an export from phpMyAdmin).</p>
+
+<p><i>If you must parse a very large file and your script crashed due to timeout
+or because of memory limitations, try the following:</i></p>
+
+<pre>
+<span class="php-comment">// prevent script timeout</span>
+<span
+class="php-keyword2">set_time_limit</span>(<span
+class="php-num">0</span>);
+
+<span
+class="php-comment">// allow for more memory to be used by the script</span>
+<span
+class="php-keyword2">ini_set</span>(<span
+class="php-quote">'memory_limit'</span>,<span
+class="php-quote">'128M'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>$path Path to the file to be parsed.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success or FALSE on failure.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="query" id="_query">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_query">#</a>
+		<code><a href="source-class-database.html#1996-2473" title="Go to source code">query</a>( <span>string <var>$sql</var></span>, <span>array <var>$replacements</var> = <span class="php-quote">''</span></span>, <span>mixed <var>$cache</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$calc_rows</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Runs a MySQL query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Runs a MySQL query.</p>
+
+<p>After a SELECT query you can get the number of returned rows by reading the
+<code><a href="class-database.html#$returned_rows">database::<var>$returned_rows</var></a></code> property.<br />
+After an UPDATE, INSERT or DELETE query you can get the number of affected rows
+by reading the <code><a href="class-database.html#$affected_rows">database::<var>$affected_rows</var></a></code> property.<br />
+<b>Note that you don't need to return the result of this method in a variable
+for using it later with a fetch method, like <code><a href="class-database.html#_fetch_assoc">database::fetch_assoc()</a></code> or <code><a href="class-database.html#_fetch_obj">database::fetch_obj()</a></code> as all these methods, if called without the resource arguments,
+work on the LAST returned result resource!</b></p>
+
+<pre>
+<span class="php-comment">// run a query</span>
+<span
+class="php-var">$db</span>-&gt;query(<span
+class="php-quote">'
+    SELECT
+        *
+    FROM
+        users
+    WHERE
+        gender = ?
+'</span>, <span
+class="php-keyword1">array</span>(<span class="php-var">$gender</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code><br>$sql MySQL statement to execute.</dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code><br>$replacements (Optional) An array with as many items as the total parameter
+markers ("?", question marks) in <i>$sql</i>. Each item will be automatically
+<code><a href="class-database.html#_escape">database::escape()</a></code>-ed and will replace the corresponding "?". Default is "" (an
+empty string).</dd>
+					<dt><var>$cache</var></dt>
+					<dd><code>mixed</code><br>$cache (Optional) Instructs the script on whether it should cache the query's
+results or not. Can be either FALSE - meaning no caching - or an integer
+representing the number of seconds after which the cached results are considered
+to be expired and the query will be executed again. The caching method is
+specified by the value of the <code><a href="class-database.html#$caching_method">database::<var>$caching_method</var></a></code> property. Default is FALSE.</dd>
+					<dt><var>$calc_rows</var></dt>
+					<dd><code>boolean</code><br>$calc_rows (Optional) If query is a SELECT query, this argument is set to TRUE,
+and there is a LIMIT applied to the query, the value of the <code><a href="class-database.html#$found_rows">database::<var>$found_rows</var></a></code>
+property (after the query was run) will represent the number of records that
+would have been returned if there was no LIMIT applied to the query. This is
+very useful for creating pagination or computing averages. Also, note that this
+information will be available without running an extra query. Here's how <a href="http://dev.mysql.com/doc/refman/5.0/en/information-functions.html#function_found-rows">http://dev.mysql.com/doc/refman/5.0/en/information-functions.html#function_found-rows</a>
+Default is FALSE.</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>On success, returns a resource or an array (if results are taken from the cache)
+or FALSE on error. <i>If query results are taken from cache, the returned result
+will be a pointer to the actual results of the query!</i><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="seek" id="_seek">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_seek">#</a>
+		<code><a href="source-class-database.html#2475-2566" title="Go to source code">seek</a>( <span>integer <var>$row</var></span>, <span>resource <var>$resource</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Moves the internal row pointer of the MySQL result associated with the
+specified result identifier to the<br />
+specified row number.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Moves the internal row pointer of the MySQL result associated with the
+specified result identifier to the specified row number.</p>
+
+<p>The next call to a fetch method, like <code><a href="class-database.html#_fetch_assoc">database::fetch_assoc()</a></code> or <code><a href="class-database.html#_fetch_obj">database::fetch_obj()</a></code>, would return that row.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code>integer</code><br>$row The row you want to move the pointer to. <i>$row</i> starts at 0.
+<i>$row</i> should be a value in the range from 0 to <code><a href="class-database.html#$returned_rows">database::<var>$returned_rows</var></a></code></dd>
+					<dt><var>$resource</var></dt>
+					<dd><code>resource</code><br>$resource (Optional) Resource to fetch. <i>If not specified, the resource
+returned by the last run query is used.</i></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success or FALSE on failure.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.0<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select" id="_select">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select">#</a>
+		<code><a href="source-class-database.html#2568-2659" title="Go to source code">select</a>( <span>string <var>$columns</var></span>, <span>string <var>$table</var></span>, <span>string <var>$where</var> = <span class="php-quote">''</span></span>, <span>array <var>$replacements</var> = <span class="php-quote">''</span></span>, <span>string <var>$order</var> = <span class="php-quote">''</span></span>, <span>mixed <var>$limit</var> = <span class="php-quote">''</span></span>, <span>mixed <var>$cache</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$calc_rows</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Shorthand for simple SELECT queries.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Shorthand for simple SELECT queries.</p>
+
+<p>For complex queries (using UNION, JOIN, etc) use the <code><a href="class-database.html#_query">database::query()</a></code>
+method.<br />
+When using this method, column names will be enclosed in grave accents " ` "
+(thus, allowing seamless usage of reserved words as column names) and values
+will be automatically escaped.</p>
+
+<pre>
+<span class="php-var">$db</span>-&gt;select(
+    <span
+class="php-quote">'column1, column2'</span>,
+    <span
+class="php-quote">'table'</span>,
+    <span
+class="php-quote">'criteria = ?'</span>,
+    <span
+class="php-keyword1">array</span>(<span
+class="php-var">$criteria</span>)
+);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$columns</var></dt>
+					<dd><code>string</code><br>$columns Any string representing valid column names as used in a SELECT
+statement.</dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Table in which to search.</dd>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code><br>$where (Optional) A MySQL WHERE clause (without the WHERE keyword). Default is
+"" (an empty string).</dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code><br>$replacements (Optional) An array with as many items as the total parameter
+markers ("?", question marks) in <i>$column</i>, <i>$table</i> and
+<i>$where</i>. Each item will be automatically <code><a href="class-database.html#_escape">database::escape()</a></code>-ed and will
+replace the corresponding "?". Default is "" (an empty string).</dd>
+					<dt><var>$order</var></dt>
+					<dd><code>string</code><br>$order (Optional) A MySQL ORDER BY clause (without the ORDER BY keyword).
+Default is "" (an empty string).</dd>
+					<dt><var>$limit</var></dt>
+					<dd><code>mixed</code><br>$limit (Optional) A MySQL LIMIT clause (without the LIMIT keyword). Default is
+"" (an empty string).</dd>
+					<dt><var>$cache</var></dt>
+					<dd><code>mixed</code><br>$cache (Optional) Instructs the script on whether it should cache the query's
+results or not. Can be either FALSE - meaning no caching - or an integer
+representing the number of seconds after which the cached results are considered
+to be expired and the query will be executed again. The caching method is
+specified by the value of the <code><a href="class-database.html#$caching_method">database::<var>$caching_method</var></a></code> property. Default is FALSE.</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+					<dt><var>$calc_rows</var></dt>
+					<dd><code>boolean</code><br>$calc_rows (Optional) If query is a SELECT query, this argument is set to TRUE,
+and there is a LIMIT applied to the query, the value of the <code><a href="class-database.html#$found_rows">database::<var>$found_rows</var></a></code>
+property (after the query was run) will represent the number of records that
+would have been returned if there was no LIMIT applied to the query. This is
+very useful for creating pagination or computing averages. Also, note that this
+information will be available without running an extra query. Here's how <a href="http://dev.mysql.com/doc/refman/5.0/en/information-functions.html#function_found-rows">http://dev.mysql.com/doc/refman/5.0/en/information-functions.html#function_found-rows</a>
+Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>On success, returns a resource or an array (if results are taken from the cache)
+or FALSE on error. <i>If query results are taken from cache, the returned result
+will be a pointer to the actual results of the query!</i><br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.0<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_charset" id="_set_charset">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_charset">#</a>
+		<code><a href="source-class-database.html#2661-2698" title="Go to source code">set_charset</a>( <span>string <var>$charset</var> = <span class="php-quote">'utf8'</span></span>, <span>string <var>$collation</var> = <span class="php-quote">'utf8_general_ci'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets MySQL character set and collation.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets MySQL character set and collation.</p>
+
+<p>The ensure that data is both properly saved and retrieved from the database
+you should call this method, first thing after connecting to the database.<br />
+If this method is not called, a warning message will be displayed in the debug
+console.<br />
+Warnings can be disabled by setting the <code><a href="class-database.html#$disable_warnings">database::<var>$disable_warnings</var></a></code> property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$charset</var></dt>
+					<dd><code>string</code><br>$charset (Optional) The character set to be used by the database. Default is
+'utf8'. For a list of possible values see: <a href="http://dev.mysql.com/doc/refman/5.1/en/charset-charsets.html">http://dev.mysql.com/doc/refman/5.1/en/charset-charsets.html</a></dd>
+					<dt><var>$collation</var></dt>
+					<dd><code>string</code><br>$collation (Optional) The collation to be used by the database. Default is
+'utf8_general_ci'. For a list of possible values see: <a href="http://dev.mysql.com/doc/refman/5.1/en/charset-charsets.html">http://dev.mysql.com/doc/refman/5.1/en/charset-charsets.html</a></dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.0<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="show_debug_console" id="_show_debug_console">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_show_debug_console">#</a>
+		<code><a href="source-class-database.html#2700-3383" title="Go to source code">show_debug_console</a>( <span>boolean <var>$return</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Shows the debug console, <i>if</i> <code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is TRUE and the viewer's IP
+address is in the<br />
+<code><a href="class-database.html#$debugger_ip">database::<var>$debugger_ip</var></a></code> array (or <i>$debugger_ip</i> is an empty array).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Shows the debug console, <i>if</i> <code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is TRUE and the viewer's IP
+address is in the <code><a href="class-database.html#$debugger_ip">database::<var>$debugger_ip</var></a></code> array (or <i>$debugger_ip</i> is an empty
+array).</p>
+
+<p><i>This method must be called after all the queries in a script, preferably
+before &lt;/body&gt;!</i><br />
+<b>You should ALWAYS have this method called at the end of your scripts and
+control whether the debug console will show or not with the <code><a href="class-database.html#$debug">database::<var>$debug</var></a></code>
+property.</b></p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$return</var></dt>
+					<dd><code>boolean</code><br>$return (Optional) If set to TRUE, the output will be returned instead of being
+printed to the screen. Default is FALSE.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="transaction_complete" id="_transaction_complete">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_transaction_complete">#</a>
+		<code><a href="source-class-database.html#3385-3454" title="Go to source code">transaction_complete</a>( )</code>
+
+		<div class="description short">
+			
+<p>Ends a transaction which means that if all the queries since <code><a href="class-database.html#_transaction_start">database::transaction_start()</a></code> are valid, it writes<br />
+the data to the database, but if any of the queries had an error, ignore all
+queries and treat them as if they<br />
+never happened.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Ends a transaction which means that if all the queries since <code><a href="class-database.html#_transaction_start">database::transaction_start()</a></code> are valid, it writes the data to the database, but if any
+of the queries had an error, ignore all queries and treat them as if they never
+happened.</p>
+
+<pre>
+<span class="php-comment">// start transactions</span>
+<span
+class="php-var">$db</span>-&gt;transaction_start();
+
+<span
+class="php-comment">// run queries</span>
+
+<span
+class="php-comment">// if all the queries since &quot;transaction_start&quot; are valid, write data to the database;</span>
+<span
+class="php-comment">// if any of the queries had an error, ignore all queries and treat them as if they never happened</span>
+<span
+class="php-var">$db</span>-&gt;transaction_complete();
+</pre>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success or FALSE on error.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="transaction_start" id="_transaction_start">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_transaction_start">#</a>
+		<code><a href="source-class-database.html#3456-3518" title="Go to source code">transaction_start</a>( <span>boolean <var>$test_only</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Starts the transaction system.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Starts the transaction system.</p>
+
+<p>Transactions work only with databases that support transaction-safe table
+types. In MySQL, these are InnoDB or BDB table types. Working with MyISAM tables
+will not raise any errors but statements will be executed automatically as soon
+as they are called (just like if there was no transaction).<br />
+If you are not familiar with transactions, have a look at <a href="http://dev.mysql.com/doc/refman/5.0/en/commit.html">http://dev.mysql.com/doc/refman/5.0/en/commit.html</a>
+and try to find a good online resource for more specific information.</p>
+
+<pre>
+<span class="php-comment">// start transactions</span>
+<span
+class="php-var">$db</span>-&gt;transaction_start();
+
+<span
+class="php-comment">// run queries</span>
+
+<span
+class="php-comment">// if all the queries since &quot;transaction_start&quot; are valid, write data to database;</span>
+<span
+class="php-comment">// if any of the queries had an error, ignore all queries and treat them as if they never happened</span>
+<span
+class="php-var">$db</span>-&gt;transaction_complete();
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$test_only</var></dt>
+					<dd><code>boolean</code><br>$test_only (Optional) Starts the transaction system in "test mode", causing the
+queries to be rolled back (when <code><a href="class-database.html#_transaction_complete">database::transaction_complete()</a></code> is called ) -
+even if all queries are valid. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success or FALSE on error.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="table_exists" id="_table_exists">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_table_exists">#</a>
+		<code><a href="source-class-database.html#3520-3542" title="Go to source code">table_exists</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Checks whether a table exists in the current database.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks whether a table exists in the current database.</p>
+
+<pre>
+<span
+class="php-comment">// checks whether table &quot;users&quot; exists</span>
+table_exists(<span
+class="php-quote">'users'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table The name of the table to check if it exists in the database.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE if table given as argument exists in the database or FALSE if not.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.3<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="truncate" id="_truncate">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_truncate">#</a>
+		<code><a href="source-class-database.html#3544-3582" title="Go to source code">truncate</a>( <span>string <var>$table</var></span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Shorthand for truncating tables.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Shorthand for truncating tables.</p>
+
+<p><i>Truncating a table is quicker then deleting all rows, as stated in the
+MySQL documentation at <a href="http://dev.mysql.com/doc/refman/4.1/en/truncate-table.html">http://dev.mysql.com/doc/refman/4.1/en/truncate-table.html</a>.
+Truncating a table also resets the value of the AUTO INCREMENT column.</i></p>
+
+<pre>
+<span class="php-var">$db</span>-&gt;truncate(<span
+class="php-quote">'table'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Table to truncate.</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success of FALSE on error.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0.9<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-database.html#3584-3695" title="Go to source code">update</a>( <span>string <var>$table</var></span>, <span>array <var>$columns</var></span>, <span>string <var>$where</var> = <span class="php-quote">''</span></span>, <span>array <var>$replacements</var> = <span class="php-quote">''</span></span>, <span>boolean <var>$highlight</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Shorthand for UPDATE queries.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Shorthand for UPDATE queries.</p>
+
+<p>When using this method, column names will be enclosed in grave accents " ` "
+(thus, allowing seamless usage of reserved words as column names) and values
+will be automatically escaped.<br />
+After an update, see <code><a href="class-database.html#$affected_rows">database::<var>$affected_rows</var></a></code> to find out how many rows were
+affected.</p>
+
+<pre>
+<span class="php-var">$db</span>-&gt;update(
+    <span
+class="php-quote">'table'</span>,
+    <span
+class="php-keyword1">array</span>(
+        <span
+class="php-quote">'column1'</span>   =&gt;  <span
+class="php-quote">'value1'</span>,
+        <span
+class="php-quote">'column2'</span>   =&gt;  <span
+class="php-quote">'value2'</span>,
+    ),
+    <span
+class="php-quote">'criteria = ?'</span>,
+    <span
+class="php-keyword1">array</span>(<span
+class="php-var">$criteria</span>)
+);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>$table Table in which to update.</dd>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code><br>$columns An associative array where the array's keys represent the columns names
+and the array's values represent the values to be inserted in each respective
+column. Column names will be enclosed in grave accents " ` " (thus, allowing
+seamless usage of reserved words as column names) and values will be
+automatically <code><a href="class-database.html#_escape">database::escape()</a></code>d. A special value may also be used for when a
+column's value needs to be incremented or decremented. In this case, use
+<i>INC(value)</i> where <i>value</i> is the value to increase the column's value
+with. Use <i>INC(-value)</i> to decrease the column's value: &lt;code&gt;
+$db-&gt;update( 'table', array( 'column' =&gt; 'INC(?)', ), 'criteria = ?',
+array( $value, $criteria ) ); &lt;/code&gt; ...is equivalent to &lt;code&gt;
+$db-&gt;query('UPDATE table SET column = colum + ? WHERE criteria = ?',
+array($value, $criteria)); &lt;/code&gt;</dd>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code><br>$where (Optional) A MySQL WHERE clause (without the WHERE keyword). Default is
+"" (an empty string).</dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code><br>$replacements (Optional) An array with as many items as the total parameter
+markers ("?", question marks) in <i>$column</i>, <i>$table</i> and
+<i>$where</i>. Each item will be automatically <code><a href="class-database.html#_escape">database::escape()</a></code>-ed and will
+replace the corresponding "?". Default is "" (an empty string).</dd>
+					<dt><var>$highlight</var></dt>
+					<dd><code>boolean</code><br>$highlight (Optional) If set to TRUE, the debug console will open automatically
+and will show the query. Default is FALSE.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns TRUE on success of FALSE on error<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0.9<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write_log" id="_write_log">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write_log">#</a>
+		<code><a href="source-class-database.html#3697-3835" title="Go to source code">write_log</a>( )</code>
+
+		<div class="description short">
+			
+<p>Writes debug information to a <i>log.txt</i> log file at <code><a href="class-database.html#$log_path">database::<var>$log_path</var></a></code>
+<i>if</i> <code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is TRUE and the<br />
+viewer's IP address is in the <code><a href="class-database.html#$debugger_ip">database::<var>$debugger_ip</var></a></code> array (or <i>$debugger_ip</i>
+is an empty array).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Writes debug information to a <i>log.txt</i> log file at <code><a href="class-database.html#$log_path">database::<var>$log_path</var></a></code>
+<i>if</i> <code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is TRUE and the viewer's IP address is in the <code><a href="class-database.html#$debugger_ip">database::<var>$debugger_ip</var></a></code> array (or <i>$debugger_ip</i> is an empty array).</p>
+
+<p><i>This method must be called after all the queries in a script!</i><br />
+<i>Make sure you're calling it BEFORE <code><a href="class-database.html#_show_debug_console">database::show_debug_console()</a></code> so that you
+can see in the debug console if writing to the log file was successful or
+not.</i></p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.0<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__destruct" id="___destruct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___destruct">#</a>
+		<code><a href="source-class-database.html#4085-4101" title="Go to source code">__destruct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Frees the memory associated with the last result.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Frees the memory associated with the last result.</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.8<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="affected_rows" id="$affected_rows">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#36-48" title="Go to source code"><var>$affected_rows</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$affected_rows" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>After an INSERT, UPDATE or DELETE query, read this property to get the number
+of affected rows.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>After an INSERT, UPDATE or DELETE query, read this property to get the number
+of affected rows.</p>
+
+<p><i>This is a read-only property!</i></p>
+
+<pre>
+<span
+class="php-comment">// after an &quot;action&quot; query...</span>
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$db</span>-&gt;affected_rows;
+</pre>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="caching_method" id="$caching_method">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#50-94" title="Go to source code"><var>$caching_method</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$caching_method" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The method to use for caching query results.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The method to use for caching query results.</p>
+
+<p>Can be either - <b>disk</b> - query results are cached as files on the disk,
+at the path specified by <code><a href="class-database.html#$cache_path">database::<var>$cache_path</var></a></code>. - <b>memcache</b> - query results
+are cached using a <a href="http://memcached.org/about">memcache</a>
+server; when using this method, make sure to also set the appropriate values for
+<code><a href="class-database.html#$memcache_host">database::<var>$memcache_host</var></a></code>, <code><a href="class-database.html#$memcache_port">database::<var>$memcache_port</var></a></code> and, optionally, <code><a href="class-database.html#$memcache_compressed">database::<var>$memcache_compressed</var></a></code>.<br />
+<i>For using memcache as caching method, PHP version must be 4.3.3+, must be
+compiled with the <a href="http://pecl.php.net/package/memcache">memcache</a> extension and, if <code><a href="class-database.html#$memcache_compressed">database::<var>$memcache_compressed</var></a></code> property is set to TRUE,
+needs to be configured with </i><b>--with-zlib[=DIR]</b><i>.</i><br />
+<i>If caching method is set to "memcache", <code><a href="class-database.html#$memcache_host">database::<var>$memcache_host</var></a></code>, <code><a href="class-database.html#$memcache_port">database::<var>$memcache_port</var></a></code> and, optionally <code><a href="class-database.html#$memcache_compressed">database::<var>$memcache_compressed</var></a></code>, must be set
+<em>prior</em> to calling the <code><a href="class-database.html#_connect">database::connect()</a></code> method! Failing to do so will
+disable caching.</i></p>
+
+<pre>
+<span
+class="php-comment">// the host where memcache is listening for connections</span>
+<span
+class="php-var">$db</span>-&gt;memcache_host = <span
+class="php-quote">'localhost'</span>;
+
+<span
+class="php-comment">// the port where memcache is listening for connections</span>
+<span
+class="php-var">$db</span>-&gt;memcache_port = <span
+class="php-num">11211</span>;
+
+<span
+class="php-comment">// for this to work, php needs to be configured with --with-zlib[=dir] !</span>
+<span
+class="php-comment">// set it to FALSE otherwise</span>
+<span
+class="php-var">$db</span>-&gt;memcache_compressed = <span
+class="php-keyword1">true</span>;
+
+<span
+class="php-comment">// cache queries using the memcache server</span>
+<span
+class="php-var">$db</span>-&gt;caching_method = <span
+class="php-quote">'memcache'</span>;
+
+<span
+class="php-comment">// only after we've set up everything it is time to connect</span>
+<span
+class="php-var">$db</span>-&gt;connect(...)
+</pre>
+
+<p><i>Caching is done on a per-query basis, by setting the "cache" argument when
+calling some of the library's methods like <code><a href="class-database.html#_query">database::query()</a></code>, <code><a href="class-database.html#_select">database::select()</a></code>,
+<code><a href="class-database.html#_dcount">database::dcount()</a></code>, <code><a href="class-database.html#_dlookup">database::dlookup()</a></code>, <code><a href="class-database.html#_dmax">database::dmax()</a></code> and <code><a href="class-database.html#_dsum">database::dsum()</a></code>!</i><br
+/>
+Default is 'disk'.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.7<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="cache_path" id="$cache_path">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#96-103" title="Go to source code"><var>$cache_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$cache_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Path (with trailing slash) where to store cached queries results.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Path (with trailing slash) where to store cached queries results.</p>
+
+<p><i>The path must be relative to your working path and not the class'
+path!</i></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="cached_results" id="$cached_results">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#105-112" title="Go to source code"><var>$cached_results</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$cached_results" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Array with cached results.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Array with cached results.</p>
+
+<p>We will use this for fetching and seek</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="console_show_records" id="$console_show_records">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#114-137" title="Go to source code"><var>$console_show_records</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$console_show_records" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Sets how many of the records returned by a SELECT query should be shown in
+the debug console.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Sets how many of the records returned by a SELECT query should be shown in
+the debug console.</p>
+
+<pre>
+<span class="php-comment">// show more records</span>
+<span
+class="php-var">$db</span>-&gt;console_show_records(<span
+class="php-num">50</span>);
+</pre>
+
+<p><i>Be aware that having this property set to a high number (thousands or
+more) and having a query that returns that many rows, can cause your script to
+crash due to memory limitations. In this case you should either lower the value
+of this property or try and set PHP's memory limit higher using:</i></p>
+
+<pre>
+<span class="php-comment">// set PHP's memory limit to 20 MB</span>
+<span
+class="php-keyword2">ini_set</span>(<span
+class="php-quote">'memory_limit'</span>,<span
+class="php-quote">'20M'</span>);
+</pre>
+
+<p>Default is 20.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.9<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="debug" id="$debug">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#139-161" title="Go to source code"><var>$debug</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$debug" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Setting this property to TRUE, will instruct the class to generate debug
+information for each query it executes.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Setting this property to TRUE, will instruct the class to generate debug
+information for each query it executes.</p>
+
+<p>Debug information can later be reviewed by calling the <code><a href="class-database.html#_show_debug_console">database::show_debug_console()</a></code> method.<br />
+<b>Don't forget to set this to FALSE when going live. Generating the debug
+information consumes a lot of resources and is meant to be used in the
+development process only!</b>.<br />
+Note that not calling <i>show_debug_console()</i> when <code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is set to
+TRUE, will not disable debug information: debug information will still be
+generated only it will not be shown!<br />
+The propper solution is to always use show_debug_console() at the end of your
+scripts and simply change the state of <i>$debug</i> as
+<i>show_debug_console()</i> will not display anything if <i>$debug</i> is set to
+FALSE.</p>
+
+<pre>
+<span class="php-var">$db</span>-&gt;debug = <span
+class="php-keyword1">false</span>;
+</pre>
+
+<p>Default is TRUE.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="debug_info" id="$debug_info">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#163-168" title="Go to source code"><var>$debug_info</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$debug_info" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All debug information is stored in this array.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All debug information is stored in this array.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="debugger_ip" id="$debugger_ip">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#170-187" title="Go to source code"><var>$debugger_ip</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$debugger_ip" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>An array of IP addresses for which to show the debug console (when calling
+<code><a href="class-database.html#_show_debug_console">database::show_debug_console()</a></code> and<br />
+<code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is TRUE).</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>An array of IP addresses for which to show the debug console (when calling
+<code><a href="class-database.html#_show_debug_console">database::show_debug_console()</a></code> and <code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is TRUE).</p>
+
+<p>Leaving this an empty array, will display the debug console for
+everybody.</p>
+
+<pre>
+<span
+class="php-comment">// show the debug console only to specific IPs</span>
+<span
+class="php-var">$db</span>-&gt;debugger_ip = <span
+class="php-keyword1">array</span>(<span
+class="php-quote">'192.168.0.12'</span>, <span
+class="php-quote">'192.168.0.13'</span>);
+</pre>
+
+<p>Default is an empty array.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.6<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="disable_warnings" id="$disable_warnings">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#189-201" title="Go to source code"><var>$disable_warnings</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$disable_warnings" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>By default, if <code><a href="class-database.html#_set_charset">database::set_charset()</a></code> is not called, a warning message will be
+displayed in the debug console.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>By default, if <code><a href="class-database.html#_set_charset">database::set_charset()</a></code> is not called, a warning message will be
+displayed in the debug console.</p>
+
+<p>The ensure that data is both properly saved and retrieved from the database
+you should call this method, first thing after connecting to the database.<br />
+If you don't want to call the method and don't want to see the warning either,
+set this property to FALSE.<br />
+Default is TRUE.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="found_rows" id="$found_rows">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#203-215" title="Go to source code"><var>$found_rows</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$found_rows" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>After a SELECT query done through either <code><a href="class-database.html#_select">database::select()</a></code> or <code><a href="class-database.html#_query">database::query()</a></code>
+methods, and having set the<br />
+<i>$calc_rows</i> argument to TRUE, this property would contain the number of
+records that would have been<br />
+returned if there was no LIMIT applied to the query.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>After a SELECT query done through either <code><a href="class-database.html#_select">database::select()</a></code> or <code><a href="class-database.html#_query">database::query()</a></code>
+methods, and having set the <i>$calc_rows</i> argument to TRUE, this property
+would contain the number of records that would have been returned if there was
+no LIMIT applied to the query.</p>
+
+<p>If <i>$calc_rows</i> is FALSE, or is TRUE but there is no LIMIT applied to
+the query, this property's value will be equal to <code><a href="class-database.html#$returned_rows">database::<var>$returned_rows</var></a></code>.<br />
+<i>This is a read-only property!</i></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="halt_on_errors" id="$halt_on_errors">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#217-233" title="Go to source code"><var>$halt_on_errors</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$halt_on_errors" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>By setting this property to TRUE, the execution of the script will be halted
+upon an unsuccessful query and<br />
+the debug console will be displayed, <i>if</i> <code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is TRUE and the
+viewer's IP address is in the<br />
+<code><a href="class-database.html#$debugger_ip">database::<var>$debugger_ip</var></a></code> array (or <i>$debugger_ip</i> is an empty array).</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>By setting this property to TRUE, the execution of the script will be halted
+upon an unsuccessful query and the debug console will be displayed, <i>if</i>
+<code><a href="class-database.html#$debug">database::<var>$debug</var></a></code> is TRUE and the viewer's IP address is in the <code><a href="class-database.html#$debugger_ip">database::<var>$debugger_ip</var></a></code>
+array (or <i>$debugger_ip</i> is an empty array).</p>
+
+<pre>
+<span
+class="php-comment">// don't stop execution on critical errors (if possible)</span>
+<span
+class="php-var">$db</span>-&gt;halt_on_errors = <span
+class="php-keyword1">false</span>;
+</pre>
+
+<p>Default is TRUE.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.5<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="language" id="$language">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#235-244" title="Go to source code"><var>$language</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$language" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The language to be used in the debug console.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The language to be used in the debug console.</p>
+
+<p>Default is "english".</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="link_identifier" id="$link_identifier">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#246-251" title="Go to source code"><var>$link_identifier</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$link_identifier" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>MySQL link identifier.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>MySQL link identifier.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="log_path" id="$log_path">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#253-271" title="Go to source code"><var>$log_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$log_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Path (with trailing slash) where to store the log file.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Path (with trailing slash) where to store the log file.</p>
+
+<p><b>The path is relative to your working directory.</b><br />
+Data is written to the log file when calling the <code><a href="class-database.html#_write_log">database::write_log()</a></code> method.<br
+/>
+<i>At the given path the script will attempt to create a file named "log.txt".
+Remember to grant the appropriate rights to the script!</i><br />
+<b>IF YOU'RE LOGGING, MAKE SURE YOU HAVE A CRON JOB OR ANYTHING THAT DELETES THE
+LOG FILE FROM TIME TO TIME!</b><br />
+Remember that the library will try to write errors to the system log (if PHP is
+<a href="http://www.php.net/manual/en/errorfunc.configuration.php#ini.log-errors">configured so</a>) <b>only</b> when the $debug debug property is set to
+FALSE (as when the <i>debug</i> property is set to TRUE the error messages are
+reported in the debug console);</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="max_query_time" id="$max_query_time">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#273-288" title="Go to source code"><var>$max_query_time</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$max_query_time" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Time (in seconds) after which a query will be considered as running for too
+long.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Time (in seconds) after which a query will be considered as running for too
+long.</p>
+
+<p>If a query's execution time exceeds this number, a notification email will be
+automatically sent to the address defined by <code><a href="class-database.html#$notification_address">database::<var>$notification_address</var></a></code>,
+having <code><a href="class-database.html#$notifier_domain">database::<var>$notifier_domain</var></a></code> in subject.</p>
+
+<pre>
+<span
+class="php-comment">// consider queries running for more than 5 seconds as slow and send email</span>
+<span
+class="php-var">$db</span>-&gt;max_query_time = <span
+class="php-num">5</span>;
+</pre>
+
+<p>Default is 10.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="memcache" id="$memcache">
+		<td class="attributes"><code>
+			public  
+			object
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#290-299" title="Go to source code"><var>$memcache</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$memcache" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Instance of an opened memcache server connection.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Instance of an opened memcache server connection.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.7<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="memcache_compressed" id="$memcache_compressed">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#301-314" title="Go to source code"><var>$memcache_compressed</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$memcache_compressed" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Setting this property to TRUE will instruct to library to compressed (using
+zlib) the cached results.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Setting this property to TRUE will instruct to library to compressed (using
+zlib) the cached results.</p>
+
+<p><i>For this to work, PHP needs to be configured with </i>
+<b>--with-zlib[=DIR]</b> <i>!</i><br />
+<i>Set this property only if you are using "memcache" as <code><a href="class-database.html#$caching_method">database::<var>$caching_method</var></a></code>.</i><br />
+Default is FALSE.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.7<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="memcache_host" id="$memcache_host">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#316-327" title="Go to source code"><var>$memcache_host</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$memcache_host" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The host where memcache is listening for connections.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The host where memcache is listening for connections.</p>
+
+<p><i>Set this property only if you are using "memcache" as <code><a href="class-database.html#$caching_method">database::<var>$caching_method</var></a></code>.</i><br />
+Default is FALSE.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.7<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="memcache_port" id="$memcache_port">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#329-340" title="Go to source code"><var>$memcache_port</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$memcache_port" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The port where memcache is listening for connections.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The port where memcache is listening for connections.</p>
+
+<p><i>Set this property only if you are using "memcache" as <code><a href="class-database.html#$caching_method">database::<var>$caching_method</var></a></code>.</i><br />
+Default is FALSE.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.7<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="minimize_console" id="$minimize_console">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#342-353" title="Go to source code"><var>$minimize_console</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$minimize_console" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>By setting this property to TRUE, a minimized version of the debug console
+will be shown by default.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>By setting this property to TRUE, a minimized version of the debug console
+will be shown by default.</p>
+
+<p>Clicking on it, will show the full debug console.<br />
+Default is TRUE</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.4<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="notification_address" id="$notification_address">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#355-370" title="Go to source code"><var>$notification_address</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$notification_address" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Email address to which notification emails to be sent when a query's
+execution time exceeds the number of<br />
+seconds set by <code><a href="class-database.html#$max_query_time">database::<var>$max_query_time</var></a></code>.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Email address to which notification emails to be sent when a query's
+execution time exceeds the number of seconds set by <code><a href="class-database.html#$max_query_time">database::<var>$max_query_time</var></a></code>.</p>
+
+<p>If a query's execution time exceeds the number of seconds set by <code><a href="class-database.html#$max_query_time">database::<var>$max_query_time</var></a></code>, a notification email will be automatically sent to the address
+defined by <code><a href="class-database.html#$notification_address">database::<var>$notification_address</var></a></code>, having <code><a href="class-database.html#$notifier_domain">database::<var>$notifier_domain</var></a></code> in
+subject.</p>
+
+<pre>
+<span
+class="php-comment">// the email address where to send an email when there are slow queries</span>
+<span
+class="php-var">$db</span>-&gt;notifier_address = <span
+class="php-quote">'youremail@yourdomain.com'</span>;
+</pre>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="notifier_domain" id="$notifier_domain">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#372-387" title="Go to source code"><var>$notifier_domain</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$notifier_domain" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Domain name to be used in the subject of notification emails sent when a
+query's execution time exceeds the number<br />
+of seconds set by <code><a href="class-database.html#$max_query_time">database::<var>$max_query_time</var></a></code>.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Domain name to be used in the subject of notification emails sent when a
+query's execution time exceeds the number of seconds set by <code><a href="class-database.html#$max_query_time">database::<var>$max_query_time</var></a></code>.</p>
+
+<p>If a query's execution time exceeds the number of seconds set by <code><a href="class-database.html#$max_query_time">database::<var>$max_query_time</var></a></code>, a notification email will be automatically sent to the address
+defined by <code><a href="class-database.html#$notification_address">database::<var>$notification_address</var></a></code>, having <code><a href="class-database.html#$notifier_domain">database::<var>$notifier_domain</var></a></code> in
+subject.</p>
+
+<pre>
+<span
+class="php-comment">// set a domain name so that you'll know where the email comes from</span>
+<span
+class="php-var">$db</span>-&gt;notifier_domain = <span
+class="php-quote">'yourdomain.com'</span>;
+</pre>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="returned_rows" id="$returned_rows">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#389-405" title="Go to source code"><var>$returned_rows</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$returned_rows" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>After a SELECT query, read this property to get the number of returned
+rows.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>After a SELECT query, read this property to get the number of returned
+rows.</p>
+
+<p><i>This is a read-only property!</i><br />
+See <code><a href="class-database.html#$found_rows">database::<var>$found_rows</var></a></code> also.</p>
+
+<pre>
+<span class="php-comment">// after a select query...</span>
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$db</span>-&gt;returned_rows;
+</pre>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.4<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="transaction_status" id="$transaction_status">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#407-418" title="Go to source code"><var>$transaction_status</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$transaction_status" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Tells whether a transaction is in progress or not.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Tells whether a transaction is in progress or not.</p>
+
+<p>Possible values are - 0, no transaction is in progress - 1, a transaction is
+in progress - 2, a transaction is in progress but an error occurred with one of
+the queries - 3, transaction is run in test mode and it will be rolled back upon
+completion</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="warnings" id="$warnings">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-database.html#420-425" title="Go to source code"><var>$warnings</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$warnings" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Array of warnings, generated by the script, to be shown to the user in the
+debug console</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Array of warnings, generated by the script, to be shown to the user in the
+debug console</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		callcentre API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
