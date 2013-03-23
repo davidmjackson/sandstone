@@ -2,7 +2,6 @@
 
 include 'includes/init.php';
 
-// this is a database comment
 $criteria = 'Keene';
 
 $db->select(
