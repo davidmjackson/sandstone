@@ -1,7 +1,9 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+
+include '../includes/secure.php';
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,8 +11,9 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+
+        <a href="?logout=1" >Logout</a>
+        
+        
     </body>
 </html>

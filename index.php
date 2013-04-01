@@ -1,22 +1,26 @@
 <?php
+include 'includes/config.php';
+include 'includes/access.class.php';
 
-include 'includes/init.php';
+$acc = new access($host, $username, $password, $database);
 
 if(isset($_POST['username']) && isset($_POST['password'])){
     
-  $db->query('SELECT account_userid,account_firstname,account_lastname,account_username,account_type,account_status FROM account_users WHERE account_username=? AND account_password=?',$_POST);
-  
-  $records = $db->fetch_assoc_all();
-   
-  if($records[0]['account_userid']>0){
-           
-      session_start();
+   $sql = "SELECT account_userid,account_firstname,account_lastname,account_username,account_type,account_status FROM account_users WHERE account_username=? AND account_password=?";
+    
+   $result = $acc->login($sql,$_POST);
+         
+    if($result[0]['account_userid']>0){
+
+      $secure = $acc->secure($result);
+
+      if($secure){
+          
+        header("location:system/dashboard.php");
+        exit();
       
-      $_SESSION['userid'] = $records['account_userid'];
-      
-      header("location:system/dashboard.php");
-      exit();
-  }
+      }
+   }
 }
 
 ?>
@@ -30,8 +34,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     
     <body>
         
-        <?php echo $_SESSION['userid']; ?>
-        
+                
         <form action="index.php" method="post">
             
             <input type="text" name="username" />
