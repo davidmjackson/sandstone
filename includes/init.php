@@ -10,7 +10,7 @@ $db = new database();
 
 $db->debug = TRUE;
 
-$db->connect('localhost', 'admin', 'admin', 'scsnew');
+$db->connect('localhost', 'admin', 'admin', 'sandstone');
 
 // system variables 
 
