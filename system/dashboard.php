@@ -12,7 +12,7 @@ include '../includes/secure.php';
     </head>
     <body>
 
-        <a href="?logout=1" >Logout</a>
+       <?php echo $logout; ?>
         
         
     </body>

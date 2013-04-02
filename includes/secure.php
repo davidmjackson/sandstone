@@ -13,6 +13,14 @@ if($secure===FALSE){
     exit();
 }
 
-
+if(isset($_GET['logout'])){
+    
+    session_destroy();
+    
+    unset($_SESSION);
+    
+    header("location:/index.php");
+    exit();
+}
 
 ?>
