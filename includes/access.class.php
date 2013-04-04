@@ -1,5 +1,6 @@
 <?php
 
+// all things access
 class access {
     
     private $db;
@@ -17,8 +18,22 @@ class access {
         
     }
     
-    public function login($sql,$post){
+    public function login($post){
         
+        $sql = "SELECT 
+                    account_userid,
+                    account_firstname,
+                    account_lastname,
+                    account_username,
+                    account_type,
+                    account_status 
+                FROM 
+                    account_users 
+                WHERE 
+                    account_username=? 
+                AND 
+                    account_password=?";
+
         $this->db->query($sql,$post);
   
         $result = $this->db->fetch_assoc_all();
@@ -33,7 +48,6 @@ class access {
         session_destroy();
         
         return TRUE;
-   
     }
     
     public function secure($rec=NULL){
@@ -55,7 +69,7 @@ class access {
 
             $_SESSION['userid'] = $rec;
 
-            return true;
+            return TRUE;
         }
     }
     

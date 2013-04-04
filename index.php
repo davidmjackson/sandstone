@@ -6,9 +6,8 @@ $acc = new access($host, $username, $password, $database);
 
 if(isset($_POST['username']) && isset($_POST['password'])){
     
-   $sql = "SELECT account_userid,account_firstname,account_lastname,account_username,account_type,account_status FROM account_users WHERE account_username=? AND account_password=?";
     
-   $result = $acc->login($sql,$_POST);
+   $result = $acc->login($_POST);
          
     if($result[0]['account_userid']>0){
 
